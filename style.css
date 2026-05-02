@@ -9,12 +9,12 @@
   --blue: #378ADD;
   --amber: #EF9F27;
   --coral: #D85A30;
-  --bg: #f5f5f3;
+  --bg: #f7f7f5;
   --bg2: #ffffff;
-  --bg3: #eeede9;
+  --bg3: #efefed;
   --border: rgba(0,0,0,0.08);
   --text: #1a1a1a;
-  --muted: #666;
+  --muted: #777;
 }
 
 html { scroll-behavior: smooth; }
@@ -36,7 +36,7 @@ nav {
   align-items: center;
   justify-content: space-between;
   padding: 1rem 2rem;
-  background: rgba(13,13,13,0.85);
+  background: rgba(247,247,245,0.92);
   backdrop-filter: blur(12px);
   border-bottom: 0.5px solid var(--border);
 }
@@ -74,7 +74,7 @@ nav ul a:hover { color: var(--text); }
 .hero {
   text-align: center;
   padding: 5rem 2rem 4rem;
-  background: radial-gradient(ellipse at 50% 0%, rgba(29,158,117,0.08) 0%, transparent 70%);
+  background: radial-gradient(ellipse at 50% 0%, rgba(29,158,117,0.07) 0%, transparent 70%);
 }
 
 .avatar {
@@ -97,6 +97,7 @@ nav ul a:hover { color: var(--text); }
   font-weight: 600;
   line-height: 1.2;
   margin-bottom: 0.75rem;
+  color: var(--text);
   animation: fadeUp 0.6s ease 0.1s both;
 }
 
@@ -158,7 +159,7 @@ nav ul a:hover { color: var(--text); }
   transition: background 0.2s, border-color 0.2s;
 }
 
-.btn:hover { background: var(--bg3); border-color: rgba(255,255,255,0.2); }
+.btn:hover { background: var(--bg3); border-color: rgba(0,0,0,0.15); }
 
 .btn.primary {
   background: var(--green);
@@ -186,7 +187,7 @@ section h2 {
 
 #om p {
   font-size: 16px;
-  color: #ccc;
+  color: #444;
   max-width: 680px;
   line-height: 1.8;
 }
@@ -204,7 +205,7 @@ section h2 {
   border-radius: 12px;
   padding: 1.25rem;
   cursor: pointer;
-  transition: border-color 0.2s, transform 0.2s;
+  transition: border-color 0.2s, transform 0.2s, box-shadow 0.2s;
   display: flex;
   flex-direction: column;
   gap: 8px;
@@ -213,6 +214,7 @@ section h2 {
 .card:hover {
   border-color: var(--green);
   transform: translateY(-2px);
+  box-shadow: 0 4px 20px rgba(29,158,117,0.08);
 }
 
 .card-header {
@@ -221,7 +223,7 @@ section h2 {
   align-items: center;
 }
 
-.card h3 { font-size: 15px; font-weight: 500; }
+.card h3 { font-size: 15px; font-weight: 500; color: var(--text); }
 
 .badge {
   font-size: 10px;
@@ -234,7 +236,7 @@ section h2 {
 
 .card p {
   font-size: 13px;
-  color: var(--muted);
+  color: #666;
   line-height: 1.6;
   flex: 1;
 }
@@ -251,10 +253,10 @@ section h2 {
   border-radius: 99px;
 }
 
-.t-green { background: rgba(29,158,117,0.15); color: #5DCAA5; }
-.t-blue  { background: rgba(55,138,221,0.15); color: #85B7EB; }
-.t-amber { background: rgba(239,159,39,0.15);  color: #FAC775; }
-.t-coral { background: rgba(216,90,48,0.15);   color: #F0997B; }
+.t-green { background: rgba(29,158,117,0.1); color: #0F6E56; }
+.t-blue  { background: rgba(55,138,221,0.1); color: #185FA5; }
+.t-amber { background: rgba(239,159,39,0.1); color: #854F0B; }
+.t-coral { background: rgba(216,90,48,0.1);  color: #993C1D; }
 
 .card-link {
   font-size: 12px;
@@ -271,7 +273,7 @@ section h2 {
 
 .skill-group h4 {
   font-size: 13px;
-  font-weight: 500;
+  font-weight: 600;
   color: var(--green);
   margin-bottom: 0.75rem;
 }
@@ -280,15 +282,15 @@ section h2 {
 
 .skill-group li {
   font-size: 14px;
-  color: #bbb;
-  padding: 3px 0;
+  color: #444;
+  padding: 5px 0;
   border-bottom: 0.5px solid var(--border);
 }
 
 /* KONTAKT */
 #kontakt p {
   font-size: 15px;
-  color: var(--muted);
+  color: #555;
   margin-bottom: 1.5rem;
 }
 
@@ -316,8 +318,9 @@ footer {
   text-align: center;
   padding: 2rem;
   font-size: 12px;
-  color: var(--muted);
+  color: #999;
   border-top: 0.5px solid var(--border);
+  background: var(--bg2);
 }
 
 /* ANIMATIONER */
@@ -345,7 +348,18 @@ footer {
 /* MOBIL */
 @media (max-width: 600px) {
   nav ul { display: none; }
-  nav ul.open { display: flex; flex-direction: column; position: absolute; top: 56px; left: 0; right: 0; background: var(--bg); padding: 1rem 2rem; border-bottom: 0.5px solid var(--border); gap: 1rem; }
+  nav ul.open {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 56px;
+    left: 0;
+    right: 0;
+    background: var(--bg);
+    padding: 1rem 2rem;
+    border-bottom: 0.5px solid var(--border);
+    gap: 1rem;
+  }
   .hamburger { display: block; }
   .hero h1 { font-size: 26px; }
   .projects { grid-template-columns: 1fr; }
