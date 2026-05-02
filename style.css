@@ -9,19 +9,20 @@
   --blue: #378ADD;
   --amber: #EF9F27;
   --coral: #D85A30;
-  --bg: #f7f7f5;
   --bg2: #ffffff;
-  --bg3: #efefed;
+  --bg3: #dce8f8;
   --border: rgba(0,0,0,0.08);
   --text: #1a1a1a;
-  --muted: #777;
+  --muted: #666;
 }
 
 html { scroll-behavior: smooth; }
 
 body {
   font-family: 'Segoe UI', system-ui, sans-serif;
-  background: var(--bg);
+  background: linear-gradient(160deg, #dbeafe 0%, #eff6ff 40%, #e0f2fe 70%, #f0fdf4 100%);
+  background-attachment: fixed;
+  min-height: 100vh;
   color: var(--text);
   font-size: 16px;
   line-height: 1.7;
@@ -36,7 +37,7 @@ nav {
   align-items: center;
   justify-content: space-between;
   padding: 1rem 2rem;
-  background: rgba(247,247,245,0.92);
+  background: rgba(219,234,254,0.85);
   backdrop-filter: blur(12px);
   border-bottom: 0.5px solid var(--border);
 }
@@ -74,7 +75,7 @@ nav ul a:hover { color: var(--text); }
 .hero {
   text-align: center;
   padding: 5rem 2rem 4rem;
-  background: radial-gradient(ellipse at 50% 0%, rgba(29,158,117,0.07) 0%, transparent 70%);
+  background: transparent;
 }
 
 .avatar {
@@ -97,10 +98,7 @@ nav ul a:hover { color: var(--text); }
 }
 
 .hero h1 span {
-  background: linear-gradient(90deg, var(--green), var(--blue));
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+  color: var(--green);
 }
 
 .hero-sub {
@@ -125,7 +123,7 @@ nav ul a:hover { color: var(--text); }
   border-radius: 99px;
   border: 0.5px solid var(--border);
   color: var(--muted);
-  background: var(--bg2);
+  background: rgba(255,255,255,0.7);
   transition: border-color 0.2s, color 0.2s;
 }
 
@@ -150,11 +148,11 @@ nav ul a:hover { color: var(--text); }
   text-decoration: none;
   border: 0.5px solid var(--border);
   color: var(--text);
-  background: var(--bg2);
+  background: rgba(255,255,255,0.8);
   transition: background 0.2s, border-color 0.2s;
 }
 
-.btn:hover { background: var(--bg3); border-color: rgba(0,0,0,0.15); }
+.btn:hover { background: rgba(255,255,255,1); border-color: rgba(0,0,0,0.15); }
 
 .btn.primary {
   background: var(--green);
@@ -195,7 +193,8 @@ section h2 {
 }
 
 .card {
-  background: var(--bg2);
+  background: rgba(255,255,255,0.75);
+  backdrop-filter: blur(8px);
   border: 0.5px solid var(--border);
   border-radius: 12px;
   padding: 1.25rem;
@@ -209,7 +208,7 @@ section h2 {
 .card:hover {
   border-color: var(--green);
   transform: translateY(-2px);
-  box-shadow: 0 4px 20px rgba(29,158,117,0.08);
+  box-shadow: 0 4px 20px rgba(55,138,221,0.1);
 }
 
 .card-header {
@@ -231,7 +230,7 @@ section h2 {
 
 .card p {
   font-size: 13px;
-  color: #666;
+  color: #555;
   line-height: 1.6;
   flex: 1;
 }
@@ -302,7 +301,7 @@ section h2 {
   padding: 8px 16px;
   border: 0.5px solid var(--border);
   border-radius: 8px;
-  background: var(--bg2);
+  background: rgba(255,255,255,0.8);
   transition: border-color 0.2s, color 0.2s;
 }
 
@@ -313,9 +312,9 @@ footer {
   text-align: center;
   padding: 2rem;
   font-size: 12px;
-  color: #999;
+  color: #888;
   border-top: 0.5px solid var(--border);
-  background: var(--bg2);
+  background: rgba(219,234,254,0.5);
 }
 
 /* ANIMATIONER */
@@ -350,7 +349,7 @@ footer {
     top: 56px;
     left: 0;
     right: 0;
-    background: var(--bg);
+    background: #dbeafe;
     padding: 1rem 2rem;
     border-bottom: 0.5px solid var(--border);
     gap: 1rem;
