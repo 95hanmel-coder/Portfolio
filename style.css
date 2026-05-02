@@ -81,14 +81,9 @@ nav ul a:hover { color: var(--text); }
   width: 80px;
   height: 80px;
   border-radius: 50%;
-  background: linear-gradient(135deg, var(--green), var(--blue));
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 26px;
-  font-weight: 600;
-  color: #fff;
+  object-fit: cover;
   margin: 0 auto 1.5rem;
+  display: block;
   animation: popIn 0.5s ease both;
 }
 
