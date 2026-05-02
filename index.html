@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hanita Melin – Cloud Developer</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <nav>
+    <span class="logo">hanita.dev</span>
+    <ul>
+      <li><a href="#om">Om</a></li>
+      <li><a href="#projekt">Projekt</a></li>
+      <li><a href="#tekniker">Tekniker</a></li>
+      <li><a href="#kontakt">Kontakt</a></li>
+    </ul>
+    <div class="hamburger" onclick="toggleMenu()">&#9776;</div>
+  </nav>
+
+  <section class="hero">
+    <div class="avatar">HM</div>
+    <h1>Hej, jag är <span>Hanita Melin</span></h1>
+    <p class="hero-sub">Cloud Developer-student · Campus Mölndal · Bygger mot Azure</p>
+    <div class="hero-tags">
+      <span>Azure</span><span>Docker</span><span>ASP.NET Core</span>
+      <span>Bicep IaC</span><span>CI/CD</span><span>CosmosDB</span>
+      <span>REST API</span><span>AI/ML</span>
+    </div>
+    <div class="hero-btns">
+      <a href="#projekt" class="btn primary">Se mina projekt</a>
+      <a href="https://www.linkedin.com/in/hanita-m-52927614b/" target="_blank" class="btn">LinkedIn</a>
+      <a href="https://github.com/95hanmel-coder" target="_blank" class="btn">GitHub</a>
+    </div>
+  </section>
+
+  <section id="om">
+    <div class="section-inner">
+      <h2>Om mig</h2>
+      <p>Jag är ett år in på Cloud Developer-utbildningen på Campus Mölndal. Jag gillar att bygga riktiga saker – REST API:er, containeriserade appar och molnlösningar mot Azure. Jag har jobbat med allt från 3-tier arkitektur och CI/CD-pipelines till Managed Identity och Infrastructure as Code med Bicep.</p>
+    </div>
+  </section>
+
+  <section id="projekt">
+    <div class="section-inner">
+      <h2>Projekt</h2>
+      <div class="projects">
+
+        <div class="card" onclick="window.open('https://github.com/School-Be-Fun-They-said/The-Snaxers','_blank')">
+          <div class="card-header">
+            <h3>The Snaxers</h3>
+            <span class="badge">Grupp</span>
+          </div>
+          <p>Lyxchokladapp i ASP.NET Core MVC, helt driftsatt på Azure Container Apps med CosmosDB, Key Vault och Managed Identity. Fullständig CI/CD-pipeline med GitHub Actions.</p>
+          <div class="card-tags">
+            <span class="t-green">Azure</span>
+            <span class="t-green">Docker</span>
+            <span class="t-blue">CosmosDB</span>
+            <span class="t-blue">CI/CD</span>
+            <span class="t-blue">Bicep IaC</span>
+          </div>
+          <span class="card-link">Se på GitHub →</span>
+        </div>
+
+        <div class="card" onclick="window.open('https://github.com/95hanmel-coder/AiSentimentApi','_blank')">
+          <div class="card-header">
+            <h3>AI Sentiment API</h3>
+            <span class="badge">Eget</span>
+          </div>
+          <p>REST API som analyserar textens känsloläge med hjälp av AI. Byggt för att utforska NLP och API-design med OpenAPI-dokumentation.</p>
+          <div class="card-tags">
+            <span class="t-amber">AI/NLP</span>
+            <span class="t-blue">REST API</span>
+            <span class="t-blue">OpenAPI</span>
+          </div>
+          <span class="card-link">Se på GitHub →</span>
+        </div>
+
+        <div class="card" onclick="window.open('https://github.com/95hanmel-coder/CloudSoft','_blank')">
+          <div class="card-header">
+            <h3>CloudSoft</h3>
+            <span class="badge">Eget</span>
+          </div>
+          <p>Molnbaserat projekt med fokus på Azure-arkitektur och Infrastructure as Code med Bicep.</p>
+          <div class="card-tags">
+            <span class="t-green">Azure</span>
+            <span class="t-blue">Bicep IaC</span>
+          </div>
+          <span class="card-link">Se på GitHub →</span>
+        </div>
+
+        <div class="card" onclick="window.open('https://github.com/Campus-Molndal-CLO25/assignment-tdd-grupp2','_blank')">
+          <div class="card-header">
+            <h3>TDD Todo API</h3>
+            <span class="badge">Grupp</span>
+          </div>
+          <p>Todo API byggt med testdriven utveckling (TDD) och xUnit. Separata testprojekt, standard .NET-struktur och fullständig CI-integration.</p>
+          <div class="card-tags">
+            <span class="t-coral">TDD</span>
+            <span class="t-blue">xUnit</span>
+            <span class="t-blue">REST API</span>
+          </div>
+          <span class="card-link">Se på GitHub →</span>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section id="tekniker">
+    <div class="section-inner">
+      <h2>Tekniker</h2>
+      <div class="skills">
+        <div class="skill-group">
+          <h4>Moln & Infra</h4>
+          <ul>
+            <li>Azure Container Apps</li>
+            <li>Azure CosmosDB</li>
+            <li>Azure Key Vault</li>
+            <li>Azure Blob Storage</li>
+            <li>Application Insights</li>
+            <li>Bicep IaC</li>
+            <li>Managed Identity</li>
+          </ul>
+        </div>
+        <div class="skill-group">
+          <h4>Utveckling</h4>
+          <ul>
+            <li>ASP.NET Core MVC</li>
+            <li>C#</li>
+            <li>REST API & OpenAPI</li>
+            <li>Entity Framework Core</li>
+            <li>SQLite / CosmosDB</li>
+            <li>TDD & xUnit</li>
+          </ul>
+        </div>
+        <div class="skill-group">
+          <h4>DevOps & Verktyg</h4>
+          <ul>
+            <li>Docker & Docker Compose</li>
+            <li>GitHub Actions (CI/CD)</li>
+            <li>Git & branching-strategi</li>
+            <li>VS Code</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="kontakt">
+    <div class="section-inner">
+      <h2>Kontakt</h2>
+      <p>Vill du prata moln, kod eller karriär? Hör av dig!</p>
+      <div class="contact-links">
+        <a href="mailto:Hanita.2010@live.se">Hanita.2010@live.se</a>
+        <a href="https://www.linkedin.com/in/hanita-m-52927614b/" target="_blank">LinkedIn</a>
+        <a href="https://github.com/95hanmel-coder" target="_blank">GitHub</a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>Hanita Melin · Cloud Developer · Campus Mölndal · 2025</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
