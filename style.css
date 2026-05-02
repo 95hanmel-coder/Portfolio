@@ -30,7 +30,6 @@ body {
   line-height: 1.7;
 }
 
-/* NAV */
 nav {
   position: sticky;
   top: 0;
@@ -73,7 +72,6 @@ nav ul a:hover { color: var(--text); }
   color: var(--muted);
 }
 
-/* HERO */
 .hero {
   text-align: center;
   padding: 5rem 2rem 4rem;
@@ -168,10 +166,10 @@ nav ul a:hover { color: var(--text); }
 
 .btn.primary:hover { background: #18896a; }
 
-/* SECTIONS */
 section {
   padding: 4rem 2rem;
   border-top: 0.5px solid var(--border);
+  background: transparent;
 }
 
 .section-inner { max-width: 900px; margin: 0 auto; }
@@ -191,7 +189,6 @@ section h2 {
   line-height: 1.8;
 }
 
-/* PROJECTS */
 .projects {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -199,7 +196,7 @@ section h2 {
 }
 
 .card {
-  background: rgba(255,255,255,0.75);
+  background: rgba(255,255,255,0.6);
   backdrop-filter: blur(8px);
   border: 0.5px solid var(--border);
   border-radius: 12px;
@@ -264,7 +261,6 @@ section h2 {
   margin-top: 4px;
 }
 
-/* SKILLS */
 .skills {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
@@ -287,7 +283,6 @@ section h2 {
   border-bottom: 0.5px solid var(--border);
 }
 
-/* KONTAKT */
 #kontakt p {
   font-size: 15px;
   color: #555;
@@ -313,17 +308,15 @@ section h2 {
 
 .contact-links a:hover { border-color: var(--green); color: var(--green); }
 
-/* FOOTER */
 footer {
   text-align: center;
   padding: 2rem;
   font-size: 12px;
   color: #888;
   border-top: 0.5px solid var(--border);
-  background: rgba(219,234,254,0.5);
+  background: transparent;
 }
 
-/* ANIMATIONER */
 @keyframes fadeUp {
   from { opacity: 0; transform: translateY(16px); }
   to   { opacity: 1; transform: translateY(0); }
@@ -345,7 +338,6 @@ footer {
   transform: translateY(0);
 }
 
-/* MOBIL */
 @media (max-width: 600px) {
   nav ul { display: none; }
   nav ul.open {
