@@ -530,16 +530,17 @@ footer {
 .linkedin-btn {
   width: fit-content;
 
-  background: rgba(255,255,255,0.06);
+  background: #DCEEFF;
 
-  border: 1px solid var(--border);
+  border: 1px solid #B6DAFF;
 
-  color: var(--text);
+  color: #5a8cbe;
 
   transition:
     background 0.2s ease,
     transform 0.2s ease,
-    border-color 0.2s ease;
+    border-color 0.2s ease,
+    color 0.2s ease;
 }
 
 .linkedin-btn:hover {
@@ -547,5 +548,5 @@ footer {
 
   border-color: #0A66C2;
 
-  color: rgb(75, 178, 178);
+  color: rgb(234, 227, 227);
 }
