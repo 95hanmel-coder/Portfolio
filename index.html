@@ -23,30 +23,91 @@
   </nav>
 
   <main>
-    <section class="hero fade-in">
+    <section class="hero">
       <div class="hero-content">
         <img class="avatar" src="img/hanita.png" alt="Hanita Melin" />
         <h1><span>Hanita Melin</span></h1>
-        <p class="hero-sub">Cloud Developer student | Azure Enthusiast</p>
-        
+        <p class="hero-sub">Cloud Developer student | Campus Mölndal</p>
         <div class="hero-tags">
           <span><i class="devicon-azure-plain colored"></i> Azure</span>
           <span><i class="devicon-docker-plain colored"></i> Docker</span>
           <span><i class="devicon-dotnetcore-plain colored"></i> .NET</span>
           <span><i class="devicon-githubactions-plain colored"></i> CI/CD</span>
         </div>
-
         <div class="hero-btns">
-          <a href="#projekt" class="btn primary">Utforska Projekt</a>
+          <a href="#projekt" class="btn primary">Se mina projekt</a>
           <a href="https://github.com/95hanmel-coder" target="_blank" class="btn github">GitHub</a>
         </div>
       </div>
     </section>
 
-    </main>
+    <section id="om" class="section">
+      <div class="section-inner">
+        <h2>Om mig</h2>
+        <p>Jag studerar till Cloud Developer och brinner för molnarkitektur och automation. Jag gillar att bygga kompletta lösningar med allt från REST API:er till infrastruktur som kod (Bicep).</p>
+      </div>
+    </section>
+
+    <section id="projekt" class="section">
+      <div class="section-inner">
+        <h2>Projekt</h2>
+        <div class="projects-grid">
+          
+          <div class="card" onclick="window.open('https://github.com/School-Be-Fun-They-said/The-Snaxers','_blank')">
+            <h3>The Snaxers</h3>
+            <p>E-handel för lyxchoklad byggd i ASP.NET Core, driftsatt med Container Apps och CosmosDB.</p>
+            <div class="card-tags">
+              <span class="t-blue">Azure</span><span class="t-green">Docker</span>
+            </div>
+          </div>
+
+          <div class="card" onclick="window.open('https://github.com/95hanmel-coder/AiSentimentApi','_blank')">
+            <h3>AI Sentiment API</h3>
+            <p>REST API för analys av text med AI/NLP. Full OpenAPI-dokumentation ingår.</p>
+            <div class="card-tags">
+              <span class="t-amber">AI/NLP</span><span class="t-blue">API</span>
+            </div>
+          </div>
+
+          <div class="card" onclick="window.open('https://github.com/95hanmel-coder/CloudSoft','_blank')">
+            <h3>CloudSoft</h3>
+            <p>Projekt med fokus på Azure-arkitektur och Infrastructure as Code (Bicep).</p>
+            <div class="card-tags">
+              <span class="t-green">Bicep</span><span class="t-blue">Azure</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <section id="tekniker" class="section">
+      <div class="section-inner">
+        <h2>Tekniker</h2>
+        <div class="skills-icons">
+          <i class="devicon-azure-plain colored" title="Azure"></i>
+          <i class="devicon-csharp-plain colored" title="C#"></i>
+          <i class="devicon-dotnetcore-plain colored" title=".NET"></i>
+          <i class="devicon-docker-plain colored" title="Docker"></i>
+          <i class="devicon-githubactions-plain colored" title="GitHub Actions"></i>
+          <i class="devicon-terraform-plain colored" title="Terraform/Bicep"></i>
+        </div>
+      </div>
+    </section>
+
+    <section id="kontakt" class="section">
+      <div class="section-inner">
+        <h2>Kontakt</h2>
+        <div class="contact-links">
+          <a href="mailto:Hanita.2010@live.se" class="btn">Maila mig</a>
+          <a href="https://www.linkedin.com/in/hanita-m-52927614b/" target="_blank" class="btn">LinkedIn</a>
+        </div>
+      </div>
+    </section>
+  </main>
 
   <footer>
-    <p>&copy; 2025 Hanita Melin | Built for the Cloud</p>
+    <p>Hanita Melin · Cloud Developer · 2026</p>
   </footer>
 
   <script src="script.js"></script>
