@@ -433,7 +433,12 @@ h2 {
 
 .contact-info p {
   font-size: 1.05rem;
-  color: var(--muted);
+
+  color: var(--text);
+
+  font-weight: 500;
+
+  word-break: break-word;
 }
 
 /* =========================
@@ -516,4 +521,31 @@ footer {
   .hero-btns {
     flex-direction: column;
   }
+}
+
+/* =========================
+   LINKEDIN BUTTON
+========================= */
+
+.linkedin-btn {
+  width: fit-content;
+
+  background: rgba(255,255,255,0.06);
+
+  border: 1px solid var(--border);
+
+  color: var(--text);
+
+  transition:
+    background 0.2s ease,
+    transform 0.2s ease,
+    border-color 0.2s ease;
+}
+
+.linkedin-btn:hover {
+  background: #0A66C2;
+
+  border-color: #0A66C2;
+
+  color: white;
 }
