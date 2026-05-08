@@ -1,115 +1,351 @@
 <!DOCTYPE html>
 <html lang="sv">
+
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Hanita Melin – Cloud Developer</title>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
-  <link rel="stylesheet" href="style.css" />
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  />
+
+  <title>
+    Hanita Melin – Cloud Developer
+  </title>
+
+  <link
+    rel="preconnect"
+    href="https://fonts.googleapis.com"
+  />
+
+  <link
+    rel="preconnect"
+    href="https://fonts.gstatic.com"
+    crossorigin
+  />
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet"
+  />
+
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"
+  />
+
+  <link
+    rel="stylesheet"
+    href="style.css"
+  />
 </head>
+
 <body>
+
+  <!-- NAVBAR -->
 
   <nav>
     <div class="nav-container">
-      <span class="logo">hanita.dev</span>
+
+      <span class="logo">
+        hanita.dev
+      </span>
+
       <ul>
         <li><a href="#om">Om</a></li>
         <li><a href="#projekt">Projekt</a></li>
         <li><a href="#tekniker">Tekniker</a></li>
         <li><a href="#kontakt">Kontakt</a></li>
       </ul>
-      <div class="hamburger" onclick="toggleMenu()">&#9776;</div>
+
+      <div class="nav-actions">
+
+        <button
+          class="theme-toggle"
+          id="theme-toggle"
+        >
+          🌙
+        </button>
+
+        <button
+          class="hamburger"
+          onclick="toggleMenu()"
+        >
+          ☰
+        </button>
+
+      </div>
+
     </div>
   </nav>
 
+  <!-- HERO -->
+
   <main>
-    <section class="hero">
+
+    <section class="hero fade-in">
+
       <div class="hero-content">
-        <img class="avatar" src="img/hanita.png" alt="Hanita Melin" />
-        <h1><span>Hanita Melin</span></h1>
-        <p class="hero-sub">Cloud Developer student | Campus Mölndal</p>
+
+        <img
+          class="avatar"
+          src="img/hanita.png"
+          alt="Hanita Melin"
+        />
+
+        <h1>
+          <span>Hanita Melin</span>
+        </h1>
+
+        <p class="hero-sub">
+          Cloud Developer focused on Azure,
+          DevOps & scalable backend systems
+        </p>
+
         <div class="hero-tags">
-          <span><i class="devicon-azure-plain colored"></i> Azure</span>
-          <span><i class="devicon-docker-plain colored"></i> Docker</span>
-          <span><i class="devicon-dotnetcore-plain colored"></i> .NET</span>
-          <span><i class="devicon-githubactions-plain colored"></i> CI/CD</span>
+
+          <span>
+            <i class="devicon-azure-plain colored"></i>
+            Azure
+          </span>
+
+          <span>
+            <i class="devicon-docker-plain colored"></i>
+            Docker
+          </span>
+
+          <span>
+            <i class="devicon-dotnetcore-plain colored"></i>
+            .NET
+          </span>
+
+          <span>
+            <i class="devicon-githubactions-plain colored"></i>
+            CI/CD
+          </span>
+
         </div>
+
         <div class="hero-btns">
-          <a href="#projekt" class="btn primary">Se mina projekt</a>
-          <a href="https://github.com/95hanmel-coder" target="_blank" class="btn github">GitHub</a>
+
+          <a
+            href="#projekt"
+            class="btn primary"
+          >
+            Se mina projekt
+          </a>
+
+          <a
+            href="https://github.com/95hanmel-coder"
+            target="_blank"
+            class="btn"
+          >
+            GitHub
+          </a>
+
         </div>
+
       </div>
+
     </section>
 
-    <section id="om" class="section">
+    <!-- OM -->
+
+    <section
+      id="om"
+      class="section fade-in"
+    >
+
       <div class="section-inner">
+
         <h2>Om mig</h2>
-        <p>Jag studerar till Cloud Developer och brinner för molnarkitektur och automation. Jag gillar att bygga kompletta lösningar med allt från REST API:er till infrastruktur som kod (Bicep).</p>
+
+        <p>
+          Jag studerar till Cloud Developer
+          och bygger moderna lösningar inom
+          Azure, Docker och backendutveckling.
+          Jag gillar att kombinera automation,
+          CI/CD och Infrastructure as Code
+          för att skapa skalbara system.
+        </p>
+
       </div>
+
     </section>
 
-    <section id="projekt" class="section">
+    <!-- PROJEKT -->
+
+    <section
+      id="projekt"
+      class="section fade-in"
+    >
+
       <div class="section-inner">
+
         <h2>Projekt</h2>
+
         <div class="projects-grid">
-          
-          <div class="card" onclick="window.open('https://github.com/School-Be-Fun-They-said/The-Snaxers','_blank')">
+
+          <div
+            class="card"
+            data-link="https://github.com/School-Be-Fun-They-said/The-Snaxers"
+          >
+
             <h3>The Snaxers</h3>
-            <p>E-handel för lyxchoklad byggd i ASP.NET Core, driftsatt med Container Apps och CosmosDB.</p>
+
+            <p>
+              E-handel för lyxchoklad byggd
+              i ASP.NET Core med Azure
+              Container Apps och CosmosDB.
+            </p>
+
             <div class="card-tags">
-              <span class="t-blue">Azure</span><span class="t-green">Docker</span>
+              <span class="t-blue">Azure</span>
+              <span class="t-green">Docker</span>
             </div>
+
           </div>
 
-          <div class="card" onclick="window.open('https://github.com/95hanmel-coder/AiSentimentApi','_blank')">
+          <div
+            class="card"
+            data-link="https://github.com/95hanmel-coder/AiSentimentApi"
+          >
+
             <h3>AI Sentiment API</h3>
-            <p>REST API för analys av text med AI/NLP. Full OpenAPI-dokumentation ingår.</p>
+
+            <p>
+              REST API för analys av text
+              med AI/NLP och komplett
+              OpenAPI-dokumentation.
+            </p>
+
             <div class="card-tags">
-              <span class="t-amber">AI/NLP</span><span class="t-blue">API</span>
+              <span class="t-amber">AI/NLP</span>
+              <span class="t-blue">API</span>
             </div>
+
           </div>
 
-          <div class="card" onclick="window.open('https://github.com/95hanmel-coder/CloudSoft','_blank')">
+          <div
+            class="card"
+            data-link="https://github.com/95hanmel-coder/CloudSoft"
+          >
+
             <h3>CloudSoft</h3>
-            <p>Projekt med fokus på Azure-arkitektur och Infrastructure as Code (Bicep).</p>
+
+            <p>
+              Infrastrukturprojekt med fokus
+              på Azure-arkitektur och
+              Infrastructure as Code.
+            </p>
+
             <div class="card-tags">
-              <span class="t-green">Bicep</span><span class="t-blue">Azure</span>
+              <span class="t-green">Bicep</span>
+              <span class="t-blue">Azure</span>
             </div>
+
           </div>
 
         </div>
+
       </div>
+
     </section>
 
-    <section id="tekniker" class="section">
+    <!-- TEKNIKER -->
+
+    <section
+      id="tekniker"
+      class="section fade-in"
+    >
+
       <div class="section-inner">
+
         <h2>Tekniker</h2>
+
         <div class="skills-icons">
-          <i class="devicon-azure-plain colored" title="Azure"></i>
-          <i class="devicon-csharp-plain colored" title="C#"></i>
-          <i class="devicon-dotnetcore-plain colored" title=".NET"></i>
-          <i class="devicon-docker-plain colored" title="Docker"></i>
-          <i class="devicon-githubactions-plain colored" title="GitHub Actions"></i>
-          <i class="devicon-terraform-plain colored" title="Terraform/Bicep"></i>
+
+          <i
+            class="devicon-azure-plain colored"
+            title="Azure"
+          ></i>
+
+          <i
+            class="devicon-csharp-plain colored"
+            title="C#"
+          ></i>
+
+          <i
+            class="devicon-dotnetcore-plain colored"
+            title=".NET"
+          ></i>
+
+          <i
+            class="devicon-docker-plain colored"
+            title="Docker"
+          ></i>
+
+          <i
+            class="devicon-githubactions-plain colored"
+            title="GitHub Actions"
+          ></i>
+
+          <i
+            class="devicon-terraform-plain colored"
+            title="Terraform"
+          ></i>
+
         </div>
+
       </div>
+
     </section>
 
-    <section id="kontakt" class="section">
+    <!-- KONTAKT -->
+
+    <section
+      id="kontakt"
+      class="section fade-in"
+    >
+
       <div class="section-inner">
+
         <h2>Kontakt</h2>
+
         <div class="contact-links">
-          <a href="mailto:Hanita.2010@live.se" class="btn">Maila mig</a>
-          <a href="https://www.linkedin.com/in/hanita-m-52927614b/" target="_blank" class="btn">LinkedIn</a>
+
+          <a
+            href="mailto:Hanita.2010@live.se"
+            class="btn"
+          >
+            Maila mig
+          </a>
+
+          <a
+            href="https://www.linkedin.com/in/hanita-m-52927614b/"
+            target="_blank"
+            class="btn"
+          >
+            LinkedIn
+          </a>
+
         </div>
+
       </div>
+
     </section>
+
   </main>
 
+  <!-- FOOTER -->
+
   <footer>
-    <p>Hanita Melin · Cloud Developer · 2026</p>
+    <p>
+      Hanita Melin · Cloud Developer · 2026
+    </p>
   </footer>
 
   <script src="script.js"></script>
+
 </body>
 </html>

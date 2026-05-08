@@ -1,49 +1,112 @@
 /**
- * PORTFOLIO LOGIC - Clean & Isolated
+ * PORTFOLIO LOGIC
  */
 
-// 1. Tema-hantering (Local Storage inspiration)
+/* =========================
+   THEME
+========================= */
+
 const toggleTheme = () => {
-    const isDark = document.documentElement.classList.toggle('dark-mode');
-    localStorage.setItem('theme', isDark ? 'dark' : 'light');
+  document.documentElement.classList.toggle("dark-mode");
+
+  const isDark =
+    document.documentElement.classList.contains("dark-mode");
+
+  localStorage.setItem(
+    "theme",
+    isDark ? "dark" : "light"
+  );
 };
 
 const loadTheme = () => {
-    const savedTheme = localStorage.getItem('theme');
-    if (savedTheme === 'dark') {
-        document.documentElement.classList.add('dark-mode');
-    }
+  const savedTheme = localStorage.getItem("theme");
+
+  if (savedTheme === "dark") {
+    document.documentElement.classList.add("dark-mode");
+  }
 };
 
-// 2. Reveal Animationer (Observer pattern)
-const initScrollReveal = () => {
-    const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                entry.target.classList.add('visible');
-            }
-        });
-    }, { threshold: 0.1 });
+/* =========================
+   MOBILE MENU
+========================= */
 
-    document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
-};
-
-// 3. Mobilmeny
 const toggleMenu = () => {
-    const nav = document.querySelector('nav ul');
-    nav.style.display = nav.style.display === 'flex' ? 'none' : 'flex';
+  document
+    .querySelector("nav ul")
+    .classList.toggle("active");
 };
 
-// 4. "System Integrity Check" (Lokal motsvarighet till Health Check)
+/* =========================
+   SCROLL REVEAL
+========================= */
+
+const initScrollReveal = () => {
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("visible");
+        }
+      });
+    },
+    {
+      threshold: 0.1
+    }
+  );
+
+  document
+    .querySelectorAll(".fade-in")
+    .forEach((el) => observer.observe(el));
+};
+
+/* =========================
+   PROJECT CARDS
+========================= */
+
+const initCards = () => {
+  document
+    .querySelectorAll(".card")
+    .forEach((card) => {
+      card.addEventListener("click", () => {
+        const link = card.dataset.link;
+
+        if (link) {
+          window.open(link, "_blank");
+        }
+      });
+    });
+};
+
+/* =========================
+   DIAGNOSTICS
+========================= */
+
 const runDiagnostics = () => {
-    console.log("%c Portfolio Status: Operational ", "background: #1D9E75; color: #fff; padding: 5px;");
-    console.log("Performance: Optimal");
-    console.log("Theme Mode:", localStorage.getItem('theme') || 'default');
+  console.log(
+    "%c Portfolio Status: Operational ",
+    "background: #1D9E75; color: white; padding: 6px;"
+  );
+
+  console.log("Theme:",
+    localStorage.getItem("theme") || "default"
+  );
 };
 
-// Startsekvens
-document.addEventListener('DOMContentLoaded', () => {
-    loadTheme();
-    initScrollReveal();
-    runDiagnostics();
+/* =========================
+   INIT
+========================= */
+
+document.addEventListener("DOMContentLoaded", () => {
+
+  loadTheme();
+
+  initScrollReveal();
+
+  initCards();
+
+  runDiagnostics();
+
+  document
+    .getElementById("theme-toggle")
+    .addEventListener("click", toggleTheme);
 });
