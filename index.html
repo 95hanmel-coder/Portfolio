@@ -19,7 +19,7 @@
     <div class="hamburger" onclick="toggleMenu()">&#9776;</div>
   </nav>
 
-<section class="hero">
+  <section class="hero">
     <img class="avatar" src="img/hanita.png" alt="Hanita Melin" />
     <h1><span>Hanita Melin</span></h1>
     <p class="hero-sub">Cloud Developer-student · Campus Mölndal · Bygger mot Azure</p>
@@ -35,29 +35,28 @@
     </div>
   </section>
 
-  <section id="om">
+  <section id="om" class="fade-in">
     <div class="section-inner">
       <h2>Om mig</h2>
-      <p>Jag är ett år in på Cloud Developer-utbildningen på Campus Mölndal. Jag gillar att bygga riktiga saker – REST API:er, containeriserade appar och molnlösningar mot Azure. Jag har jobbat med allt från 3-tier arkitektur och CI/CD-pipelines till Managed Identity och Infrastructure as Code med Bicep.</p>
+      <p>Jag är ett år in på Cloud Developer-utbildningen på Campus Mölndal. Jag gillar att bygga skalbara lösningar – från REST API:er och containeriserade appar till infrastruktur som kod (IaC). Mitt fokus ligger på Azure-ekosystemet och moderna DevOps-pipelines.</p>
     </div>
   </section>
 
-  <section id="projekt">
+  <section id="projekt" class="fade-in">
     <div class="section-inner">
       <h2>Projekt</h2>
       <div class="projects">
 
-        <div class="card" onclick="window.open('https://github.com/School-Be-Fun-They-said/The-Snaxers','_blank')">
+        <div class="card" id="snaxers-card" onclick="window.open('https://github.com/School-Be-Fun-They-said/The-Snaxers','_blank')">
           <div class="card-header">
             <h3>The Snaxers</h3>
-            <span class="badge">Grupp</span>
+            <span id="snaxers-status" class="badge">Ansluter...</span>
           </div>
-          <p>Lyxchokladapp i ASP.NET Core MVC, helt driftsatt på Azure Container Apps med CosmosDB, Key Vault och Managed Identity. Fullständig CI/CD-pipeline med GitHub Actions.</p>
+          <p>Lyxchokladapp i ASP.NET Core MVC, helt driftsatt på Azure Container Apps med CosmosDB och Managed Identity. Fullständig CI/CD-pipeline via GitHub Actions.</p>
           <div class="card-tags">
             <span class="t-green">Azure</span>
             <span class="t-green">Docker</span>
             <span class="t-blue">CosmosDB</span>
-            <span class="t-blue">CI/CD</span>
             <span class="t-blue">Bicep IaC</span>
           </div>
           <span class="card-link">Se på GitHub →</span>
@@ -95,7 +94,7 @@
             <h3>TDD Todo API</h3>
             <span class="badge">Grupp</span>
           </div>
-          <p>Todo API byggt med testdriven utveckling (TDD) och xUnit. Separata testprojekt, standard .NET-struktur och fullständig CI-integration.</p>
+          <p>Todo API byggt med testdriven utveckling (TDD) och xUnit. Innehåller separata testprojekt och fullständig CI-integration.</p>
           <div class="card-tags">
             <span class="t-coral">TDD</span>
             <span class="t-blue">xUnit</span>
@@ -108,7 +107,7 @@
     </div>
   </section>
 
-  <section id="tekniker">
+  <section id="tekniker" class="fade-in">
     <div class="section-inner">
       <h2>Tekniker</h2>
       <div class="skills">
@@ -116,22 +115,18 @@
           <h4>Moln & Infra</h4>
           <ul>
             <li>Azure Container Apps</li>
-            <li>Azure CosmosDB</li>
-            <li>Azure Key Vault</li>
-            <li>Azure Blob Storage</li>
-            <li>Application Insights</li>
+            <li>Azure CosmosDB / Blob Storage</li>
+            <li>Azure Key Vault / Managed Identity</li>
             <li>Bicep IaC</li>
-            <li>Managed Identity</li>
+            <li>Application Insights</li>
           </ul>
         </div>
         <div class="skill-group">
           <h4>Utveckling</h4>
           <ul>
-            <li>ASP.NET Core MVC</li>
-            <li>C#</li>
-            <li>REST API & OpenAPI</li>
+            <li>ASP.NET Core MVC / C#</li>
+            <li>REST API & OpenAPI (Swagger)</li>
             <li>Entity Framework Core</li>
-            <li>SQLite / CosmosDB</li>
             <li>TDD & xUnit</li>
           </ul>
         </div>
@@ -140,7 +135,7 @@
           <ul>
             <li>Docker & Docker Compose</li>
             <li>GitHub Actions (CI/CD)</li>
-            <li>Git & branching-strategi</li>
+            <li>Git & Branching-strategier</li>
             <li>VS Code</li>
           </ul>
         </div>
@@ -148,7 +143,7 @@
     </div>
   </section>
 
-  <section id="kontakt">
+  <section id="kontakt" class="fade-in">
     <div class="section-inner">
       <h2>Kontakt</h2>
       <p>Vill du prata moln, kod eller karriär? Hör av dig!</p>
@@ -161,7 +156,7 @@
   </section>
 
   <footer>
-    <p>Hanita Melin · Cloud Developer · Campus Mölndal · 2025</p>
+    <p>Hanita Melin · Cloud Developer · 2026</p>
   </footer>
 
   <script src="script.js"></script>
