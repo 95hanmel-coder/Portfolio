@@ -10,84 +10,40 @@
 <body>
 
   <nav>
-    <span class="logo">hanita.dev</span>
-    <ul>
-      <li><a href="#om">Om</a></li>
-      <li><a href="#projekt">Projekt</a></li>
-      <li><a href="#tekniker">Tekniker</a></li>
-      <li><a href="#kontakt">Kontakt</a></li>
-    </ul>
-    <div class="theme-toggle" onclick="toggleTheme()" title="Byt färgtema">🌓</div>
-    <div class="hamburger" onclick="toggleMenu()">&#9776;</div>
+    <div class="nav-container">
+      <span class="logo">hanita.dev</span>
+      <ul>
+        <li><a href="#om">Om</a></li>
+        <li><a href="#projekt">Projekt</a></li>
+        <li><a href="#tekniker">Tekniker</a></li>
+        <li><a href="#kontakt">Kontakt</a></li>
+      </ul>
+      <div class="hamburger" onclick="toggleMenu()">&#9776;</div>
+    </div>
   </nav>
 
-  <section class="hero">
-    <div class="hero-content">
-      <img class="avatar" src="img/hanita.png" alt="Hanita Melin" />
-      <h1><span>Hanita Melin</span></h1>
-      <p class="hero-sub">Cloud Developer & Azure Enthusiast</p>
-      <div class="hero-tags">
-        <span><i class="devicon-azure-plain"></i> Azure</span>
-        <span><i class="devicon-docker-plain"></i> Docker</span>
-        <span><i class="devicon-dotnetcore-plain"></i> .NET</span>
-        <span><i class="devicon-githubactions-plain"></i> CI/CD</span>
-      </div>
-      <div class="hero-btns">
-        <a href="#projekt" class="btn primary">Utforska Projekt</a>
-        <a href="https://github.com/95hanmel-coder" target="_blank" class="btn">GitHub</a>
-      </div>
-    </div>
-  </section>
-
-  <section id="om" class="fade-in">
-    <div class="section-inner">
-      <h2>Systembeskrivning: Mig själv</h2>
-      <p>Som Cloud Developer fokuserar jag på att bygga robusta, skalbara lösningar. Jag inspireras av modern infrastruktur och automatiserade flöden. Mitt mål är alltid att skriva kod som är lika effektiv som den är lätt att underhålla.</p>
-    </div>
-  </section>
-
-  <section id="projekt" class="fade-in">
-    <div class="section-inner">
-      <h2>Arkiv / Projekt</h2>
-      <div class="projects">
-        <div class="card" onclick="window.open('https://github.com/95hanmel-coder/Portfolio','_blank')">
-          <div class="card-header">
-            <h3>Cloud Portfolio</h3>
-            <span class="badge">Vercel</span>
-          </div>
-          <p>Min personliga plattform optimerad för prestanda och tillgänglighet. Implementerad med modern CSS och responsiv design.</p>
-          <div class="card-tags">
-            <span class="t-blue">HTML5</span><span class="t-green">CSS3</span><span class="t-amber">JS</span>
-          </div>
+  <main>
+    <section class="hero fade-in">
+      <div class="hero-content">
+        <img class="avatar" src="img/hanita.png" alt="Hanita Melin" />
+        <h1><span>Hanita Melin</span></h1>
+        <p class="hero-sub">Cloud Developer student | Azure Enthusiast</p>
+        
+        <div class="hero-tags">
+          <span><i class="devicon-azure-plain colored"></i> Azure</span>
+          <span><i class="devicon-docker-plain colored"></i> Docker</span>
+          <span><i class="devicon-dotnetcore-plain colored"></i> .NET</span>
+          <span><i class="devicon-githubactions-plain colored"></i> CI/CD</span>
         </div>
 
-        <div class="card" onclick="window.open('https://github.com/95hanmel-coder/AiSentimentApi','_blank')">
-          <div class="card-header">
-            <h3>AI Sentiment Engine</h3>
-            <span class="badge">REST API</span>
-          </div>
-          <p>En mikrotjänst för analys av språkdata. Byggd med fokus på API-design och dokumentation.</p>
-          <div class="card-tags">
-            <span class="t-coral">C#</span><span class="t-blue">OpenAPI</span>
-          </div>
+        <div class="hero-btns">
+          <a href="#projekt" class="btn primary">Utforska Projekt</a>
+          <a href="https://github.com/95hanmel-coder" target="_blank" class="btn github">GitHub</a>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <section id="tekniker" class="fade-in">
-    <div class="section-inner">
-      <h2>Tech Stack</h2>
-      <div class="skills-grid">
-         <i class="devicon-azure-plain colored"></i>
-         <i class="devicon-csharp-plain colored"></i>
-         <i class="devicon-dotnetcore-plain colored"></i>
-         <i class="devicon-docker-plain colored"></i>
-         <i class="devicon-githubactions-plain colored"></i>
-         <i class="devicon-terraform-plain colored"></i>
-      </div>
-    </div>
-  </section>
+    </main>
 
   <footer>
     <p>&copy; 2025 Hanita Melin | Built for the Cloud</p>
